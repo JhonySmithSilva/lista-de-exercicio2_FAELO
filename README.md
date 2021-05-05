@@ -1,7 +1,7 @@
 # lista-de-exercicio2_FAELO
 atividade de Algoritmos e estrutura de dados...
 
-<img src="https://github.com/JhonySmithSilva/lista-de-exercicio2_FAELO/blob/main/listaDeExercicio02/src/main/java/imagens/LISTA%20DE%20EXER%C3%8DCIOS%2002.jpg">
+<img src="https://github.com/JhonySmithSilva/lista-de-exercicio2_FAELO/blob/main/listaDeExercicio02/src/main/java/imagens/LISTA%20DE%20EXER%C3%8DCIOS%2002.jpg" width="800" heigth="920">
 
 <h2>Sobre o Autor</h2>   
    <img src="https://avatars.githubusercontent.com/u/61160773?s=460&u=d3a2381ae5dbdc328bf982108cd798b7cf3f4034&v=4" width="100" height="120">
