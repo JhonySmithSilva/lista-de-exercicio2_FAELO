@@ -3,9 +3,11 @@
  */
 package listaDeExercicios_02;
 import java.util.Scanner;
-/**
- *
- * @author jony_
+/*
+ * Faculdade ELO
+ * Disciplina: Algoritmos e Estruturas de Dados
+ * Professor: João Ferreira
+ * aluno: Jonatas S. da Silva
  */
 public class Menu {    
     
@@ -42,24 +44,31 @@ public class Menu {
 
             switch(opcoes){
                 case 1 ->  {
-                    System.out.print("  digite o elemento a ser adicionado:  ");
+                    System.out.println("  digite o elemento a ser adicionado:  ");
                     lista.adicionar(input.nextInt());
+                    break;
                 }
                 case 2 ->  {
                     lista.removerInicio();
+                    break;
                 }
                 case 3 ->  {
                     lista.remover(input.nextInt());
+                    break;
                 }
                 case 4 ->  {
-                    lista.estaVazio();
+                    System.out.println(lista.estaVazio());
+                    break;
+                            
                 }
                 case 5 ->  {
-                    System.out.println("digite o numero que deseja pesquisar: ");
-                    lista.pesquisar(input.nextInt());
+                    System.out.println("digite o numero que deseja pesquisar: ");                   
+                    System.out.println(lista.pesquisar(input.nextInt()));
+                    break;
                 }
                 case 6 ->  {                    
-                    lista.toString();
+                    System.out.println(lista.toString());
+                    break;
                 }                         
             }
             if(this.opcoes < 0 && this.opcoes > 6 ){

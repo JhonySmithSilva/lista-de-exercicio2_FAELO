@@ -5,9 +5,11 @@
  */
 package listaDeExercicios_02;
 
-/**
- *
- * @author jony_
+/*
+ * Faculdade ELO
+ * Disciplina: Algoritmos e Estruturas de Dados
+ * Professor: João Ferreira
+ * aluno: Jonatas S. da Silva
  */
 public class ListaSimplesmenteEncadeada {
     
@@ -15,9 +17,8 @@ public class ListaSimplesmenteEncadeada {
 
     public ListaSimplesmenteEncadeada() {        
         this.inicio = null;       
-    }
+    }    
     
-    //adicionar
      public void adicionar(int elemento){
         No novoNo = new No();
         novoNo.setElemento(elemento);
@@ -33,7 +34,7 @@ public class ListaSimplesmenteEncadeada {
         auxiliar.setProximo(novoNo);
         }
      }
-    //remover inicio
+    
     public void removerInicio(){
         if(this.inicio == null){
             System.out.println("A lista está vazia.");
@@ -42,7 +43,7 @@ public class ListaSimplesmenteEncadeada {
             this.inicio = this.inicio.getProximo();
         }
     } 
-    //remover
+   
     public void remover(int elemento){
         if(this.inicio == null){
             System.out.println("A lista está vazia.");
@@ -63,30 +64,30 @@ public class ListaSimplesmenteEncadeada {
             }
         }
     }
-    //esta vazia?
+    
     public boolean estaVazio(){
         return (this.inicio == null);
     } 
-    //pesquisar
+    
     public boolean pesquisar(int elemento){
+        boolean retorno = false;
         if(this.inicio == null){
-            System.out.println("A lista está vazia.");
-            return false;
+            System.out.println("A lista está vazia.");            
         }        
         else{
             No auxiliar = this.inicio;
             do{
                 if(auxiliar.getElemento() == elemento){
-                    return true;
+                    retorno = true;
                 }
                 else{
                     auxiliar = auxiliar.getProximo();
                 }
-            }while(auxiliar != null);
-        return true;    
-        }        
+            }while(auxiliar != null);            
+        }
+        return retorno;
     }
-    //imprimir
+    
     @Override
     public String toString(){
         String print = "";
@@ -101,8 +102,5 @@ public class ListaSimplesmenteEncadeada {
             }
         }
     return print;    
-    }
-    
-    //sair
-    
+    }   
 }

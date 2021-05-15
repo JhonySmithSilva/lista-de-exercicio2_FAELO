@@ -5,16 +5,19 @@
  */
 package listaDeExercicios_02;
 
-/**
- *
- * @author jony_
+/*
+ * Faculdade ELO
+ * Disciplina: Algoritmos e Estruturas de Dados
+ * Professor: João Ferreira
+ * aluno: Jonatas S. da Silva
  */
 public class No {
     
     private int elemento;
     private No proximo;
 
-    public No() {        
+    public No() { 
+        this.elemento = 0;        
         this.proximo = null;        
     }
 
@@ -32,12 +35,5 @@ public class No {
 
     public void setProximo(No proximo) {
         this.proximo = proximo;
-    }
-
-    
-    
-    
-    
-    
-    
+    }    
 }
