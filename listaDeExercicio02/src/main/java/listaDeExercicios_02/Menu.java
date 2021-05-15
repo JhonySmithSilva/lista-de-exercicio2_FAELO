@@ -1,6 +1,4 @@
-/*
- 
- */
+
 package listaDeExercicios_02;
 import java.util.Scanner;
 /*
@@ -77,7 +75,6 @@ public class Menu {
         }while(opcoes != 0);
         System.out.println("encerrando o programa...");
     }    
-    
 }
     
 
